@@ -1,3 +1,7 @@
+*{
+  text-decoration: none;
+}
+
 .app-home {
   min-height: 100vh;
   background-image: url('https://i.pinimg.com/originals/e5/e6/25/e5e62573d094fd5a8711fa7221fdb8ed.jpg');
@@ -8,5 +12,5 @@
   justify-content: start;
   align-items: center;
   padding: 10px;
-  text-decoration: none;
+  
 }
