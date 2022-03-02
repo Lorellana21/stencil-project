@@ -5,14 +5,19 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { MatchResults } from "@stencil/router";
 export namespace Components {
     interface AppHome {
     }
     interface AppProfile {
-        "match": MatchResults;
     }
     interface AppRoot {
+    }
+    interface ButtonLanding {
+        "text": string;
+    }
+    interface HeaderTitle {
+        "image": string;
+        "text": string;
     }
 }
 declare global {
@@ -34,24 +39,46 @@ declare global {
         prototype: HTMLAppRootElement;
         new (): HTMLAppRootElement;
     };
+    interface HTMLButtonLandingElement extends Components.ButtonLanding, HTMLStencilElement {
+    }
+    var HTMLButtonLandingElement: {
+        prototype: HTMLButtonLandingElement;
+        new (): HTMLButtonLandingElement;
+    };
+    interface HTMLHeaderTitleElement extends Components.HeaderTitle, HTMLStencilElement {
+    }
+    var HTMLHeaderTitleElement: {
+        prototype: HTMLHeaderTitleElement;
+        new (): HTMLHeaderTitleElement;
+    };
     interface HTMLElementTagNameMap {
         "app-home": HTMLAppHomeElement;
         "app-profile": HTMLAppProfileElement;
         "app-root": HTMLAppRootElement;
+        "button-landing": HTMLButtonLandingElement;
+        "header-title": HTMLHeaderTitleElement;
     }
 }
 declare namespace LocalJSX {
     interface AppHome {
     }
     interface AppProfile {
-        "match"?: MatchResults;
     }
     interface AppRoot {
+    }
+    interface ButtonLanding {
+        "text"?: string;
+    }
+    interface HeaderTitle {
+        "image"?: string;
+        "text"?: string;
     }
     interface IntrinsicElements {
         "app-home": AppHome;
         "app-profile": AppProfile;
         "app-root": AppRoot;
+        "button-landing": ButtonLanding;
+        "header-title": HeaderTitle;
     }
 }
 export { LocalJSX as JSX };
@@ -61,6 +88,8 @@ declare module "@stencil/core" {
             "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
             "app-profile": LocalJSX.AppProfile & JSXBase.HTMLAttributes<HTMLAppProfileElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+            "button-landing": LocalJSX.ButtonLanding & JSXBase.HTMLAttributes<HTMLButtonLandingElement>;
+            "header-title": LocalJSX.HeaderTitle & JSXBase.HTMLAttributes<HTMLHeaderTitleElement>;
         }
     }
 }

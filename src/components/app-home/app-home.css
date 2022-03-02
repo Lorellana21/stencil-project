@@ -1,25 +1,12 @@
 .app-home {
+  min-height: 100vh;
+  background-image: url('https://i.pinimg.com/originals/e5/e6/25/e5e62573d094fd5a8711fa7221fdb8ed.jpg');
+  background-position: top;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
   padding: 10px;
-}
-
-button {
-  background: #5851ff;
-  color: white;
-  margin: 8px;
-  border: none;
-  font-size: 13px;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding: 16px 20px;
-  border-radius: 2px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
-  outline: 0;
-  letter-spacing: 0.04em;
-  transition: all 0.15s ease;
-  cursor: pointer;
-}
-
-button:hover {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
-  transform: translateY(1px);
+  text-decoration: none;
 }

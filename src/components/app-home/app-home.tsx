@@ -9,13 +9,14 @@ export class AppHome {
   render() {
     return (
       <div class="app-home">
-        <p>
-          Welcome to the Stencil App Starter. You can use this starter to build entire apps all with web components using Stencil! Check out our docs on{' '}
-          <a href="https://stenciljs.com">stenciljs.com</a> to get started.
-        </p>
+
+<header-title
+        text="culator"
+        image="https://i.pinimg.com/originals/6f/25/21/6f252187d9b7723939e46a68aba4ce0e.png"></header-title>
+        
 
         <stencil-route-link url="/profile/stencil">
-          <button>Profile page</button>
+        <button-landing text="Let´s cat-culate!"></button-landing>
         </stencil-route-link>
       </div>
     );
