@@ -1,4 +1,4 @@
-# # Cat-culator
+# Cat-culator
 
 Welcome to this mini project made with Stencil and a lot of love!💖
 
