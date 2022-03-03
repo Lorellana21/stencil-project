@@ -4,7 +4,8 @@ Welcome to this mini project made with Stencil and a lot of love!💖
 
 This is a magic calculator that returns images of kittens!😻
 
-![image](https://user-images.githubusercontent.com/81922944/155948327-1075a3f6-3fc6-4682-bf4b-6b27e7200d41.png)
+![image](https://user-images.githubusercontent.com/81922944/156612086-64ef8273-a03c-4613-a92d-58c341902271.png)
+
 
 
 It is ideal for children who are learning to calculate, as they can see the quantities reflected in the cats, and do the addition➕, subtraction➖, division➗ and multiplication✖ operations with the help of the pictures. 
