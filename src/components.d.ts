@@ -6,6 +6,10 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface AccordionMenu {
+        "content": string;
+        "título": string;
+    }
     interface AppHome {
     }
     interface AppProfile {
@@ -21,6 +25,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLAccordionMenuElement extends Components.AccordionMenu, HTMLStencilElement {
+    }
+    var HTMLAccordionMenuElement: {
+        prototype: HTMLAccordionMenuElement;
+        new (): HTMLAccordionMenuElement;
+    };
     interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {
     }
     var HTMLAppHomeElement: {
@@ -52,6 +62,7 @@ declare global {
         new (): HTMLHeaderTitleElement;
     };
     interface HTMLElementTagNameMap {
+        "accordion-menu": HTMLAccordionMenuElement;
         "app-home": HTMLAppHomeElement;
         "app-profile": HTMLAppProfileElement;
         "app-root": HTMLAppRootElement;
@@ -60,6 +71,10 @@ declare global {
     }
 }
 declare namespace LocalJSX {
+    interface AccordionMenu {
+        "content"?: string;
+        "título"?: string;
+    }
     interface AppHome {
     }
     interface AppProfile {
@@ -74,6 +89,7 @@ declare namespace LocalJSX {
         "text"?: string;
     }
     interface IntrinsicElements {
+        "accordion-menu": AccordionMenu;
         "app-home": AppHome;
         "app-profile": AppProfile;
         "app-root": AppRoot;
@@ -85,6 +101,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "accordion-menu": LocalJSX.AccordionMenu & JSXBase.HTMLAttributes<HTMLAccordionMenuElement>;
             "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
             "app-profile": LocalJSX.AppProfile & JSXBase.HTMLAttributes<HTMLAppProfileElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
