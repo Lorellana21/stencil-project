@@ -1,13 +1,52 @@
 .accordion {
-    width: 100px;
-    height: 300px;
-    border: solid 2px black;
-    background-color: aquamarine;
+    width: 200px;
+    position: fixed;
+    top: 10;
+    left: 0;
+    z-index: 999;
+    
 }
 
 .accordion-title{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    background-image: url("https://www.nicepng.com/png/detail/141-1415512_mfc-cat-logo-contrast-animal-welfare-drawing.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5rem;
+    cursor: pointer;
+    animation-name: info-move;
+    animation-duration: 1s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+
 }
+
+.accordion-content{
+    text-align: center;
+    font-size: 1rem;
+    color: #9198e5;
+    font-weight: bold;
+    background-image: url("https://img.freepik.com/free-vector/minimal-cat-background-line-art-illustration-vector_53876-151371.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 0.5rem; 
+    border: solid 5px #e66465;
+    border-radius: 5rem;
+    padding: 20px;
+    
+    
+
+}
+
+@keyframes info-move {
+    from {
+      transform: translate(-30, -30%) scale(1);
+    }
+    to {
+      transform: translate(0, -20%) scale(1.1);
+    }
+  }
