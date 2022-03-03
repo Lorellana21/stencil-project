@@ -24,8 +24,9 @@ handleAccordion(){
     return (
       <div class="accordion">
           <div class="accordion-title" onClick={() => this.handleAccordion()}>
-            <h2>{this.título}</h2>
-            <div>{this.isActive ? "🙈" : "🐵"}</div>
+            
+            {/* <div>{this.isActive ? "➖" : "➕"}</div> */}
+            {/* <h2>{this.título}</h2> */}
           </div>
           {this.isActive && <div class="accordion-content">{this.content}</div>}
         </div>
